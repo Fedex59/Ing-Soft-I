@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="psi.ornellacanavesio" content="">
+    <meta name="psicologia" content="">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="image/logo.ico">
+    <title>Federico Pastrana</title>
+</head>
+
+<body>
+    <!-- Scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script>
+        // Comprobar si hay un parámetro en la URL
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('login') && params.get('login') === 'success') {
+            alert('¡Inicio de sesión exitoso!');
+        } else {
+            // Redirigir a login.html si no hay parámetro de éxito
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <!-- ***** Header Area Start ***** -->
+    <div id="header" class="fixed-top bg-accent-opacity">
+        <div class="r-container">
+            <nav class="navbar navbar-expand-lg font-2">
+                <div class="container-fluid">
+                    <div class="logo-container">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./image/logo8.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Sobre mi </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicios">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#funcionamiento">Funcionamiento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#precios">Precios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#consejos">Consejos</a>
+                            </li>
+                         
+                        </ul>
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=5493434723727" target="_blank" rel="noreferrer" class="btn btn-white-accent px-4 py-3 fw-semibold">CONSULTAS</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+
+
+    </main>
+
+    <footer>
+        <div class="section pb-0 bg-accent-color text-white">
+        
+                          
+        </div>
+    </footer>
+
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="js/vendor/fslightbox.js"></script>
+
+</body>
+
+</html>
